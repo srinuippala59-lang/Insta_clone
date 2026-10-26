@@ -1,0 +1,144 @@
+/* ---------- Post ---------- */
+.post {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+/* Header: avatar, username, time, three dots */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.post-user {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.verified {
+  color: #0095f6;
+  font-size: 14px;
+}
+
+.dot,
+.time {
+  color: #737373;
+}
+
+.more {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Small avatar ring used in the header (same as in Stories) */
+.avatar-ring {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+}
+
+.avatar-ring img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+.avatar-ring.small {
+  padding: 2px;
+}
+
+.avatar-ring.small img {
+  width: 32px;
+  height: 32px;
+  border-width: 2px;
+}
+
+/* Post image (4:5 like Instagram) */
+.post-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+}
+
+/* Like, comment, share, save icons */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 6px;
+  font-size: 22px;
+}
+
+.post-actions .left {
+  display: flex;
+  gap: 16px;
+}
+
+.post-actions svg,
+.post-actions span {
+  cursor: pointer;
+}
+
+.post-actions svg:hover {
+  opacity: 0.6;
+}
+
+.liked {
+  color: #ed4956; /* red heart after liking */
+}
+
+/* Text under the image */
+.likes {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.caption,
+.comments p {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+/* Add a comment */
+.comment-form {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.comment-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+.comment-form button {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}

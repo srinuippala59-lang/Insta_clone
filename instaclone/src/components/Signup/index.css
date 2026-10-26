@@ -1,0 +1,123 @@
+/* ---------- Sign up page ---------- */
+.su-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+.su-box,
+.su-footer-box {
+  width: 100%;
+  max-width: 350px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+}
+
+.su-box {
+  padding: 30px 40px;
+}
+
+.su-logo {
+  font-family: "Grand Hotel", cursive;
+  font-size: 48px;
+  font-weight: 400;
+  color: rgb(19, 19, 19);
+  margin-bottom: 12px;
+}
+
+.su-subtitle {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #737373;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.su-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.su-box input {
+  width: 100%;
+  padding: 10px 8px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 13px;
+  outline: none;
+}
+
+.su-box input:focus {
+  border-color: #a8a8a8;
+}
+
+.su-terms {
+  margin: 10px 0 6px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #737373;
+}
+
+.su-box button {
+  padding: 8px;
+  background: #0095f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.su-box button:hover:not(:disabled) {
+  background: #1877f2;
+}
+
+.su-box button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* "Have an account? Log in" box */
+.su-footer-box {
+  padding: 20px;
+  font-size: 14px;
+}
+
+.su-footer-box a {
+  color: #0095f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.su-footer-box a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 450px) {
+  .su-page {
+    background: #fff;
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+
+  .su-box {
+    border: none;
+    padding: 20px;
+  }
+
+  .su-footer-box {
+    border: none;
+    border-top: 1px solid #dbdbdb;
+  }
+}

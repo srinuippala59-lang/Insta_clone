@@ -1,0 +1,171 @@
+/* ---------- Inbox page ---------- */
+.inbox {
+  height: 100vh;
+  background: #fff;
+  color: #262626;
+  text-align: left;
+}
+
+.inbox-main {
+  margin-left: 72px; /* space for the fixed sidebar */
+  height: 100vh;
+  display: flex;
+}
+
+/* Left: chat list */
+.inbox-list {
+  width: 350px;
+  flex-shrink: 0;
+  border-right: 1px solid #dbdbdb;
+  overflow-y: auto;
+  padding-top: 24px;
+}
+
+.inbox-title {
+  padding: 0 24px 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.inbox-sub {
+  padding: 8px 24px 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inbox-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+.inbox-item:hover {
+  background: #fafafa;
+}
+
+.inbox-item.active {
+  background: #efefef;
+}
+
+.inbox-item img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.inbox-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.inbox-info strong {
+  font-size: 14px;
+}
+
+.inbox-info span {
+  font-size: 12px;
+  color: #737373;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Blue dot for unread chats */
+.inbox-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0095f6;
+}
+
+/* Right: conversation */
+.chat {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.chat-header img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.chat-body {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 24px;
+}
+
+.bubble {
+  max-width: 60%;
+  padding: 10px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.bubble.them {
+  align-self: flex-start;
+  background: #efefef;
+}
+
+.bubble.me {
+  align-self: flex-end;
+  background: #3797f0;
+  color: #fff;
+}
+
+/* Message input */
+.chat-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 24px;
+  padding: 8px 8px 8px 20px;
+  border: 1px solid #dbdbdb;
+  border-radius: 22px;
+}
+
+.chat-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+.chat-form button {
+  padding: 0 12px;
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chat-form button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}

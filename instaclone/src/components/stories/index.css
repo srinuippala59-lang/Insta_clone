@@ -1,0 +1,58 @@
+/* ---------- Stories ---------- */
+.stories {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 4px 0 16px;
+  scrollbar-width: none; /* hide scrollbar in Firefox */
+}
+
+.stories::-webkit-scrollbar {
+  display: none; /* hide scrollbar in Chrome, Edge, Safari */
+}
+
+.story {
+  flex: 0 0 auto;
+  width: 66px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Username under the circle */
+.story span {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #262626;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Colorful ring around the avatar */
+.avatar-ring {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.avatar-ring img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+/* Smaller version, used in the post header */
+.avatar-ring.small {
+  padding: 2px;
+}
+
+.avatar-ring.small img {
+  width: 32px;
+  height: 32px;
+  border-width: 2px;
+}

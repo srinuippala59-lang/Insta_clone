@@ -1,0 +1,47 @@
+/* ---------- Floating Messages button ---------- */
+.messages-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.icon-wrap {
+  position: relative;
+  display: flex;
+  font-size: 24px;
+}
+
+.icon-wrap .badge {
+  top: -6px;
+  right: -8px;
+}
+
+.mini-avatars {
+  display: flex;
+}
+
+.mini-avatars img {
+  width: 24px;
+  height: 24px;
+  margin-left: -8px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 700px) {
+  .messages-btn {
+    display: none;
+  }
+}
